@@ -1,5 +1,53 @@
+/* Center all h1 elements */
+h1 {
+  text-align: center;
+}
+
+/* Style links with padding and background color */
+a {
+  display: inline-block; /* Ensures padding works correctly */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: grey;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Text color */
+}
+
+/* Style for figcaption */
+figcaption {
+  font-size: smaller;
+  text-align: center;
+}
+
+/* Center all paragraphs with a width of 800px */
+p {
+  width: 800px;
+  text-align: center;
+  margin: 10px auto; /* Center horizontally with top and bottom margin */
+}
+
+/* Center all content within the body */
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+  text-align: center;
+}
+
+/* Styles for the #details section */
+#details {
+  padding: 20px;
+  background-color: #e0e0e0;
+  overflow: hidden; /* Clear floats */
+}
+
+/* Styles for each div inside #details */
+#details div {
+  float: left; /* Float each div to the left */
+  width: calc(25% - 20px); /* Calculate width to occupy 25% minus margin */
+  margin-right: 10px; /* Margin between divs */
+  background-color: white; /* Background color */
+  padding: 20px; /* Padding inside each div */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Remove default margin for h3 tags inside #details */
+#details h3 {
+  margin-top: 0;
 }
